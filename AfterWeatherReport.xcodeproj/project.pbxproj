@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		991F83221994BDEC0090675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F83211994BDEC0090675E /* Foundation.framework */; };
+		991F83241994BDEC0090675E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F83231994BDEC0090675E /* CoreGraphics.framework */; };
+		991F83261994BDEC0090675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F83251994BDEC0090675E /* UIKit.framework */; };
+		991F832C1994BDEC0090675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 991F832A1994BDEC0090675E /* InfoPlist.strings */; };
+		991F832E1994BDEC0090675E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F832D1994BDEC0090675E /* main.m */; };
+		991F83321994BDEC0090675E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83311994BDEC0090675E /* AppDelegate.m */; };
+		991F83341994BDEC0090675E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991F83331994BDEC0090675E /* Images.xcassets */; };
+		991F833B1994BDEC0090675E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F833A1994BDEC0090675E /* XCTest.framework */; };
+		991F833C1994BDEC0090675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F83211994BDEC0090675E /* Foundation.framework */; };
+		991F833D1994BDEC0090675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991F83251994BDEC0090675E /* UIKit.framework */; };
+		991F83451994BDEC0090675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 991F83431994BDEC0090675E /* InfoPlist.strings */; };
+		991F83471994BDEC0090675E /* AfterWeatherReportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83461994BDEC0090675E /* AfterWeatherReportTests.m */; };
+		991F83521994BE0B0090675E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83511994BE0B0090675E /* RootViewController.m */; };
+		991F83561994BEB60090675E /* CollectionViewStyleCityManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83551994BEB60090675E /* CollectionViewStyleCityManageViewController.m */; };
+		991F83591994BEE80090675E /* M2SimpleGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83581994BEE80090675E /* M2SimpleGridView.m */; };
+		991F835C1994BF320090675E /* CollectionViewStyleCityManageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F835B1994BF320090675E /* CollectionViewStyleCityManageView.m */; };
+		991F835F1994BFD20090675E /* CollectionViewStyleCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F835E1994BFD20090675E /* CollectionViewStyleCityCell.m */; };
+		991F83631994C06B0090675E /* CityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83621994C06B0090675E /* CityManager.m */; };
+		991F83661994C07B0090675E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83651994C07B0090675E /* City.m */; };
+		991F836B1994DA650090675E /* city_delete_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 991F836A1994DA650090675E /* city_delete_button@2x.png */; };
+		991F83711994DE220090675E /* AddCityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F836E1994DE220090675E /* AddCityView.m */; };
+		991F83721994DE220090675E /* AddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83701994DE220090675E /* AddCityViewController.m */; };
+		991F83771994DE2F0090675E /* CityAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83741994DE2F0090675E /* CityAddCollectionViewCell.m */; };
+		991F83781994DE2F0090675E /* CityAddSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83761994DE2F0090675E /* CityAddSearchResultCell.m */; };
+		991F837D1994E2B50090675E /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 991F837A1994E2B50090675E /* cities.json */; };
+		991F837E1994E2B50090675E /* HotCitiesConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F837C1994E2B50090675E /* HotCitiesConfig.m */; };
+		991F83811994E2F00090675E /* CitySearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 991F83801994E2F00090675E /* CitySearcher.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		991F833E1994BDEC0090675E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 991F83161994BDEC0090675E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 991F831D1994BDEC0090675E;
+			remoteInfo = AfterWeatherReport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		991F831E1994BDEC0090675E /* AfterWeatherReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfterWeatherReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		991F83211994BDEC0090675E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		991F83231994BDEC0090675E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		991F83251994BDEC0090675E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		991F83291994BDEC0090675E /* AfterWeatherReport-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AfterWeatherReport-Info.plist"; sourceTree = "<group>"; };
+		991F832B1994BDEC0090675E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		991F832D1994BDEC0090675E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		991F832F1994BDEC0090675E /* AfterWeatherReport-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AfterWeatherReport-Prefix.pch"; sourceTree = "<group>"; };
+		991F83301994BDEC0090675E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		991F83311994BDEC0090675E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		991F83331994BDEC0090675E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		991F83391994BDEC0090675E /* AfterWeatherReportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfterWeatherReportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		991F833A1994BDEC0090675E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		991F83421994BDEC0090675E /* AfterWeatherReportTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AfterWeatherReportTests-Info.plist"; sourceTree = "<group>"; };
+		991F83441994BDEC0090675E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		991F83461994BDEC0090675E /* AfterWeatherReportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AfterWeatherReportTests.m; sourceTree = "<group>"; };
+		991F83501994BE0B0090675E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		991F83511994BE0B0090675E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		991F83541994BEB60090675E /* CollectionViewStyleCityManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewStyleCityManageViewController.h; sourceTree = "<group>"; };
+		991F83551994BEB60090675E /* CollectionViewStyleCityManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewStyleCityManageViewController.m; sourceTree = "<group>"; };
+		991F83571994BEE80090675E /* M2SimpleGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M2SimpleGridView.h; sourceTree = "<group>"; };
+		991F83581994BEE80090675E /* M2SimpleGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M2SimpleGridView.m; sourceTree = "<group>"; };
+		991F835A1994BF320090675E /* CollectionViewStyleCityManageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewStyleCityManageView.h; sourceTree = "<group>"; };
+		991F835B1994BF320090675E /* CollectionViewStyleCityManageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewStyleCityManageView.m; sourceTree = "<group>"; };
+		991F835D1994BFD20090675E /* CollectionViewStyleCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewStyleCityCell.h; sourceTree = "<group>"; };
+		991F835E1994BFD20090675E /* CollectionViewStyleCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewStyleCityCell.m; sourceTree = "<group>"; };
+		991F83611994C06B0090675E /* CityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityManager.h; sourceTree = "<group>"; };
+		991F83621994C06B0090675E /* CityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityManager.m; sourceTree = "<group>"; };
+		991F83641994C07B0090675E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		991F83651994C07B0090675E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		991F836A1994DA650090675E /* city_delete_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "city_delete_button@2x.png"; sourceTree = "<group>"; };
+		991F836D1994DE220090675E /* AddCityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityView.h; sourceTree = "<group>"; };
+		991F836E1994DE220090675E /* AddCityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityView.m; sourceTree = "<group>"; };
+		991F836F1994DE220090675E /* AddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityViewController.h; sourceTree = "<group>"; };
+		991F83701994DE220090675E /* AddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityViewController.m; sourceTree = "<group>"; };
+		991F83731994DE2F0090675E /* CityAddCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAddCollectionViewCell.h; sourceTree = "<group>"; };
+		991F83741994DE2F0090675E /* CityAddCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAddCollectionViewCell.m; sourceTree = "<group>"; };
+		991F83751994DE2F0090675E /* CityAddSearchResultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAddSearchResultCell.h; sourceTree = "<group>"; };
+		991F83761994DE2F0090675E /* CityAddSearchResultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAddSearchResultCell.m; sourceTree = "<group>"; };
+		991F837A1994E2B50090675E /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
+		991F837B1994E2B50090675E /* HotCitiesConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotCitiesConfig.h; sourceTree = "<group>"; };
+		991F837C1994E2B50090675E /* HotCitiesConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotCitiesConfig.m; sourceTree = "<group>"; };
+		991F837F1994E2F00090675E /* CitySearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CitySearcher.h; sourceTree = "<group>"; };
+		991F83801994E2F00090675E /* CitySearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CitySearcher.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		991F831B1994BDEC0090675E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F83241994BDEC0090675E /* CoreGraphics.framework in Frameworks */,
+				991F83261994BDEC0090675E /* UIKit.framework in Frameworks */,
+				991F83221994BDEC0090675E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991F83361994BDEC0090675E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F833B1994BDEC0090675E /* XCTest.framework in Frameworks */,
+				991F833D1994BDEC0090675E /* UIKit.framework in Frameworks */,
+				991F833C1994BDEC0090675E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		991F83151994BDEC0090675E = {
+			isa = PBXGroup;
+			children = (
+				991F83271994BDEC0090675E /* AfterWeatherReport */,
+				991F83671994DA650090675E /* Resources */,
+				991F83401994BDEC0090675E /* AfterWeatherReportTests */,
+				991F83201994BDEC0090675E /* Frameworks */,
+				991F831F1994BDEC0090675E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		991F831F1994BDEC0090675E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				991F831E1994BDEC0090675E /* AfterWeatherReport.app */,
+				991F83391994BDEC0090675E /* AfterWeatherReportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		991F83201994BDEC0090675E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991F83211994BDEC0090675E /* Foundation.framework */,
+				991F83231994BDEC0090675E /* CoreGraphics.framework */,
+				991F83251994BDEC0090675E /* UIKit.framework */,
+				991F833A1994BDEC0090675E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		991F83271994BDEC0090675E /* AfterWeatherReport */ = {
+			isa = PBXGroup;
+			children = (
+				991F83301994BDEC0090675E /* AppDelegate.h */,
+				991F83311994BDEC0090675E /* AppDelegate.m */,
+				991F83501994BE0B0090675E /* RootViewController.h */,
+				991F83511994BE0B0090675E /* RootViewController.m */,
+				991F83601994BFEF0090675E /* 城市数据模块 */,
+				991F83531994BEA20090675E /* 城市界面CollectionView风格 */,
+				991F83791994E2700090675E /* 热点城市 */,
+				991F836C1994DCE50090675E /* 城市搜索 */,
+				991F83331994BDEC0090675E /* Images.xcassets */,
+				991F83281994BDEC0090675E /* Supporting Files */,
+			);
+			path = AfterWeatherReport;
+			sourceTree = "<group>";
+		};
+		991F83281994BDEC0090675E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				991F83291994BDEC0090675E /* AfterWeatherReport-Info.plist */,
+				991F832A1994BDEC0090675E /* InfoPlist.strings */,
+				991F832D1994BDEC0090675E /* main.m */,
+				991F832F1994BDEC0090675E /* AfterWeatherReport-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		991F83401994BDEC0090675E /* AfterWeatherReportTests */ = {
+			isa = PBXGroup;
+			children = (
+				991F83461994BDEC0090675E /* AfterWeatherReportTests.m */,
+				991F83411994BDEC0090675E /* Supporting Files */,
+			);
+			path = AfterWeatherReportTests;
+			sourceTree = "<group>";
+		};
+		991F83411994BDEC0090675E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				991F83421994BDEC0090675E /* AfterWeatherReportTests-Info.plist */,
+				991F83431994BDEC0090675E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		991F83531994BEA20090675E /* 城市界面CollectionView风格 */ = {
+			isa = PBXGroup;
+			children = (
+				991F83541994BEB60090675E /* CollectionViewStyleCityManageViewController.h */,
+				991F83551994BEB60090675E /* CollectionViewStyleCityManageViewController.m */,
+				991F835A1994BF320090675E /* CollectionViewStyleCityManageView.h */,
+				991F835B1994BF320090675E /* CollectionViewStyleCityManageView.m */,
+				991F835D1994BFD20090675E /* CollectionViewStyleCityCell.h */,
+				991F835E1994BFD20090675E /* CollectionViewStyleCityCell.m */,
+				991F83571994BEE80090675E /* M2SimpleGridView.h */,
+				991F83581994BEE80090675E /* M2SimpleGridView.m */,
+			);
+			name = "城市界面CollectionView风格";
+			sourceTree = "<group>";
+		};
+		991F83601994BFEF0090675E /* 城市数据模块 */ = {
+			isa = PBXGroup;
+			children = (
+				991F83611994C06B0090675E /* CityManager.h */,
+				991F83621994C06B0090675E /* CityManager.m */,
+				991F83641994C07B0090675E /* City.h */,
+				991F83651994C07B0090675E /* City.m */,
+			);
+			name = "城市数据模块";
+			sourceTree = "<group>";
+		};
+		991F83671994DA650090675E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				991F83681994DA650090675E /* image */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		991F83681994DA650090675E /* image */ = {
+			isa = PBXGroup;
+			children = (
+				991F83691994DA650090675E /* _temp */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		991F83691994DA650090675E /* _temp */ = {
+			isa = PBXGroup;
+			children = (
+				991F836A1994DA650090675E /* city_delete_button@2x.png */,
+			);
+			path = _temp;
+			sourceTree = "<group>";
+		};
+		991F836C1994DCE50090675E /* 城市搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				991F836F1994DE220090675E /* AddCityViewController.h */,
+				991F83701994DE220090675E /* AddCityViewController.m */,
+				991F836D1994DE220090675E /* AddCityView.h */,
+				991F836E1994DE220090675E /* AddCityView.m */,
+				991F83731994DE2F0090675E /* CityAddCollectionViewCell.h */,
+				991F83741994DE2F0090675E /* CityAddCollectionViewCell.m */,
+				991F83751994DE2F0090675E /* CityAddSearchResultCell.h */,
+				991F83761994DE2F0090675E /* CityAddSearchResultCell.m */,
+				991F837F1994E2F00090675E /* CitySearcher.h */,
+				991F83801994E2F00090675E /* CitySearcher.m */,
+			);
+			name = "城市搜索";
+			sourceTree = "<group>";
+		};
+		991F83791994E2700090675E /* 热点城市 */ = {
+			isa = PBXGroup;
+			children = (
+				991F837B1994E2B50090675E /* HotCitiesConfig.h */,
+				991F837C1994E2B50090675E /* HotCitiesConfig.m */,
+				991F837A1994E2B50090675E /* cities.json */,
+			);
+			name = "热点城市";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		991F831D1994BDEC0090675E /* AfterWeatherReport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 991F834A1994BDEC0090675E /* Build configuration list for PBXNativeTarget "AfterWeatherReport" */;
+			buildPhases = (
+				991F831A1994BDEC0090675E /* Sources */,
+				991F831B1994BDEC0090675E /* Frameworks */,
+				991F831C1994BDEC0090675E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AfterWeatherReport;
+			productName = AfterWeatherReport;
+			productReference = 991F831E1994BDEC0090675E /* AfterWeatherReport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		991F83381994BDEC0090675E /* AfterWeatherReportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 991F834D1994BDEC0090675E /* Build configuration list for PBXNativeTarget "AfterWeatherReportTests" */;
+			buildPhases = (
+				991F83351994BDEC0090675E /* Sources */,
+				991F83361994BDEC0090675E /* Frameworks */,
+				991F83371994BDEC0090675E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				991F833F1994BDEC0090675E /* PBXTargetDependency */,
+			);
+			name = AfterWeatherReportTests;
+			productName = AfterWeatherReportTests;
+			productReference = 991F83391994BDEC0090675E /* AfterWeatherReportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		991F83161994BDEC0090675E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = chenms.m2;
+				TargetAttributes = {
+					991F83381994BDEC0090675E = {
+						TestTargetID = 991F831D1994BDEC0090675E;
+					};
+				};
+			};
+			buildConfigurationList = 991F83191994BDEC0090675E /* Build configuration list for PBXProject "AfterWeatherReport" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 991F83151994BDEC0090675E;
+			productRefGroup = 991F831F1994BDEC0090675E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				991F831D1994BDEC0090675E /* AfterWeatherReport */,
+				991F83381994BDEC0090675E /* AfterWeatherReportTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		991F831C1994BDEC0090675E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F837D1994E2B50090675E /* cities.json in Resources */,
+				991F832C1994BDEC0090675E /* InfoPlist.strings in Resources */,
+				991F836B1994DA650090675E /* city_delete_button@2x.png in Resources */,
+				991F83341994BDEC0090675E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991F83371994BDEC0090675E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F83451994BDEC0090675E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		991F831A1994BDEC0090675E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F83321994BDEC0090675E /* AppDelegate.m in Sources */,
+				991F835C1994BF320090675E /* CollectionViewStyleCityManageView.m in Sources */,
+				991F835F1994BFD20090675E /* CollectionViewStyleCityCell.m in Sources */,
+				991F83721994DE220090675E /* AddCityViewController.m in Sources */,
+				991F83561994BEB60090675E /* CollectionViewStyleCityManageViewController.m in Sources */,
+				991F83631994C06B0090675E /* CityManager.m in Sources */,
+				991F83711994DE220090675E /* AddCityView.m in Sources */,
+				991F83591994BEE80090675E /* M2SimpleGridView.m in Sources */,
+				991F837E1994E2B50090675E /* HotCitiesConfig.m in Sources */,
+				991F83811994E2F00090675E /* CitySearcher.m in Sources */,
+				991F832E1994BDEC0090675E /* main.m in Sources */,
+				991F83521994BE0B0090675E /* RootViewController.m in Sources */,
+				991F83661994C07B0090675E /* City.m in Sources */,
+				991F83781994DE2F0090675E /* CityAddSearchResultCell.m in Sources */,
+				991F83771994DE2F0090675E /* CityAddCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991F83351994BDEC0090675E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991F83471994BDEC0090675E /* AfterWeatherReportTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		991F833F1994BDEC0090675E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 991F831D1994BDEC0090675E /* AfterWeatherReport */;
+			targetProxy = 991F833E1994BDEC0090675E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		991F832A1994BDEC0090675E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				991F832B1994BDEC0090675E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		991F83431994BDEC0090675E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				991F83441994BDEC0090675E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		991F83481994BDEC0090675E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		991F83491994BDEC0090675E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		991F834B1994BDEC0090675E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AfterWeatherReport/AfterWeatherReport-Prefix.pch";
+				INFOPLIST_FILE = "AfterWeatherReport/AfterWeatherReport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		991F834C1994BDEC0090675E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AfterWeatherReport/AfterWeatherReport-Prefix.pch";
+				INFOPLIST_FILE = "AfterWeatherReport/AfterWeatherReport-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		991F834E1994BDEC0090675E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AfterWeatherReport.app/AfterWeatherReport";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AfterWeatherReport/AfterWeatherReport-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AfterWeatherReportTests/AfterWeatherReportTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		991F834F1994BDEC0090675E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AfterWeatherReport.app/AfterWeatherReport";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AfterWeatherReport/AfterWeatherReport-Prefix.pch";
+				INFOPLIST_FILE = "AfterWeatherReportTests/AfterWeatherReportTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		991F83191994BDEC0090675E /* Build configuration list for PBXProject "AfterWeatherReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991F83481994BDEC0090675E /* Debug */,
+				991F83491994BDEC0090675E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		991F834A1994BDEC0090675E /* Build configuration list for PBXNativeTarget "AfterWeatherReport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991F834B1994BDEC0090675E /* Debug */,
+				991F834C1994BDEC0090675E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		991F834D1994BDEC0090675E /* Build configuration list for PBXNativeTarget "AfterWeatherReportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991F834E1994BDEC0090675E /* Debug */,
+				991F834F1994BDEC0090675E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 991F83161994BDEC0090675E /* Project object */;
+}
